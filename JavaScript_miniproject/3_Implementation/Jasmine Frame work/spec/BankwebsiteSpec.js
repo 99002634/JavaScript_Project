@@ -135,3 +135,18 @@ describe('Testing the Account Login', ()=>{
         expect(res).toBeTruthy();
     })
 });
+
+describe('Testing the To check Transaction Details', ()=>{
+    it("Check for Customer ID", ()=>{
+        const res = customeridTest("2634");
+        expect(res).toBeTruthy();
+    })
+    it("Check for PIN", ()=>{
+        const res = pinTest("123456");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Password", ()=>{
+        const res = passwordTest("harsha");
+        expect(res).toBeTruthy();
+    })
+});
