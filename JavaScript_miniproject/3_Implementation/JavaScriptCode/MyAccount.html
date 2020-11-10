@@ -71,7 +71,11 @@
                 color:red;
             }
         </style>
-        <script>     
+        <script>  
+        function ShowErr(ele, msg)
+        {
+            $get(ele).innerText = msg;
+        } 
        function Validate()
        {
            let customer = document.regForm.customer.value;
