@@ -114,3 +114,30 @@ function loantenureTest(loan)
     let regex = /^[0-9]{1,2}$/;
     return regex.test(loan);  
 }
+
+//Apply for Loan on Credit Card   
+function nameTest(name)
+{
+    let regex = /^[a-zA-Z ]{2,30}$/;
+    return regex.test(name);  
+}
+function phonenoTest(phone) 
+{
+    let regex = /^[(0/91)]?[7-9][0-9]{9}$/;
+    return regex.test(phone);
+}
+function cardtest(card) 
+{
+    let regex = /^[0-9]{16}$/;
+    return regex.test(card);
+}
+function pinTest(password) 
+{
+    let regex = /^[0-9]{1,10}$/;
+    return regex.test(password);
+}
+function passwordTest(password) 
+{
+    let regex = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+    return regex.test(password);
+}
