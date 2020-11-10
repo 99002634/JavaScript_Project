@@ -70,3 +70,30 @@ describe('Testing the Forgot Password', ()=>{
         expect(res).toBeTruthy();
     })
 });
+
+describe('Testing the Home Loan', ()=>{
+    it("Check for Name", ()=>{
+        const res = nameTest("Harsha");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Phone No.", ()=>{
+        const res = phonenoTest("7996485901");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Address", ()=>{
+        const res = addressTest("Kolar");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Branch", ()=>{
+        const res = branchTest("Kolar");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Amount", ()=>{
+        const res = amountTest("100000");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Loan Tenure", ()=>{
+        const res = loantenureTest("5");
+        expect(res).toBeTruthy();
+    })
+});
