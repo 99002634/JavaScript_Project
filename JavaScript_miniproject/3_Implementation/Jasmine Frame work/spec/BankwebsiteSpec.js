@@ -150,3 +150,22 @@ describe('Testing the To check Transaction Details', ()=>{
         expect(res).toBeTruthy();
     })
 });
+
+describe('Testing the Net Banking', ()=>{
+    it("Check for Customer ID", ()=>{
+        const res = customeridTest("2634");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Valid Through", ()=>{
+        const res = validTest("06/25");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Password", ()=>{
+        const res = passwordTest("harsha");
+        expect(res).toBeTruthy();
+    })
+    it("Check for PIN", ()=>{
+        const res = pinTest("123456");
+        expect(res).toBeTruthy();
+    })
+});
