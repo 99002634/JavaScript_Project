@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+        <title>
+            Statement on E-mail
+        </title>
+        <style>
+            body
+            {
+                font-size: 18px;
+                background-color:white;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            h1
+            {
+              text-align: center;
+              color:darkslateblue;
+            }
+            form
+            {
+                width : 450px;
+                padding : 20px;
+                border : 2px solid red;
+                margin: 5px auto ;
+                border-radius: 20px;
+            }
+            input
+            {
+                display:block;
+                border:4px solid black;
+                padding:10px;
+                width:90%;
+                border-radius: 20px;
+            }
+            input.inline
+            {
+                display:inline-block;
+                width: auto;
+                padding-right: 5px;
+            }
+            .row
+            {
+                padding-bottom: 20px;
+            }
+            .err
+            {
+                font-size:1em;
+                color :indianred;
+            }
+            button
+            {
+                font-size: 20px;
+                width:80%;
+                height:40px;
+                background-color:yellow;
+                border-radius: 20px;
+            }
+            a
+            {
+                font-size:20px ;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" nonvalidate="true" onsubmit="return validate()">
+            <h1>Statement on E-mail</h1>
+            <div class="row">
+                <input type="text" name="customer" id="customer" placeholder="Customer ID"/>
+            </div>
+        </form>
+    </body>
+</html>
