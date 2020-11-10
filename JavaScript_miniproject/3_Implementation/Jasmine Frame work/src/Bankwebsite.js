@@ -34,3 +34,39 @@ function loantenureTest(loan)
     let regex = /^[0-9]{1,2}$/;
     return regex.test(loan);  
 }
+//Create Account
+function firstnameTest(firstname)
+{
+    let regex = /^[a-zA-Z ]{2,30}$/;
+    return regex.test(firstname);  
+}
+function lastnameTest(lastname)
+{
+    let regex = /^[a-zA-Z+ .]{2,30}$/;
+    return regex.test(lastname);  
+}
+function phonenoTest(phone) 
+{
+    let regex = /^[(0/91)]?[7-9][0-9]{9}$/;
+    return regex.test(phone);
+}
+function emailTest(email) 
+{
+    let regex = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+[.com]$/;
+    return regex.test(email);
+}
+function addressTest(address)
+{
+    let regex = /^[a-zA-Z ]{2,30}$/;
+    return regex.test(address);  
+}
+function passwordTest(password) 
+{
+    let regex = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+    return regex.test(password);
+}
+function confirmpasswordTest(confirmpassword) 
+{
+    let regex = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+    return regex.test(confirmpassword);
+}
