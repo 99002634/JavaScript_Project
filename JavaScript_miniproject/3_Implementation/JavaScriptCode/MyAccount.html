@@ -71,6 +71,29 @@
                 color:red;
             }
         </style>
+        <script>     
+       function Validate()
+       {
+           let customer = document.regForm.customer.value;
+           let password = document.regForm.password.value;
+           if(customer == "" || customer == null){
+                ShowErr("errCustomer", "Customer ID is mandatory")
+                return false;
+            }else{
+                ShowErr("errCustomer", "")
+            }
+           if(password == "" || password == null)
+           {
+               ShowErr("errPassword","Enter the Password")
+               return false;
+           }
+           else
+           {
+                ShowErr("errPassword","")
+           }
+           return true;
+       }
+        </script>
     </head>
     <body>
         <form action="" name="regForm" novalidate="true" onsubmit="return Validate()">
