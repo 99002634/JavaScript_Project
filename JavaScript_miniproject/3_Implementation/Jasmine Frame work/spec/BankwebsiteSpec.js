@@ -28,3 +28,34 @@ describe('Testing the Business Loan Application', ()=>{
         expect(res).toBeTruthy();
     })
 });
+
+describe('Testing the Create Account', ()=>{
+    it("Check for First Name", ()=>{
+        const res = firstnameTest("Harsha");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Last Name", ()=>{
+        const res = lastnameTest("C.A");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Phone No.", ()=>{
+        const res = phonenoTest("7996485901");
+        expect(res).toBeTruthy();
+    })
+    it("Check for E-mail Address", ()=>{
+        const res = emailTest("harshaca@gmail.com");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Address", ()=>{
+        const res = addressTest("Kolar");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Password", ()=>{
+        const res = passwordTest("harsha@123");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Confirm Password", ()=>{
+        const res = confirmpasswordTest("harsha@123");
+        expect(res).toBeTruthy();
+    })
+});
