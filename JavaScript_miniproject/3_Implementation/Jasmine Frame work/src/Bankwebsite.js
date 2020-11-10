@@ -141,3 +141,20 @@ function passwordTest(password)
     let regex = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
     return regex.test(password);
 }
+
+//Account Login   
+function customeridTest(customer)
+{
+    let regex = /^[0-9]{1,10}$/;
+    return regex.test(customer);  
+}
+function passwordTest(password) 
+{
+    let regex = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+    return regex.test(password);
+}
+function pinTest(password) 
+{
+    let regex = /^[0-9]{1,10}$/;
+    return regex.test(password);
+}
