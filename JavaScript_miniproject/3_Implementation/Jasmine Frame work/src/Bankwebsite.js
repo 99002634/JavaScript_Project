@@ -197,3 +197,35 @@ function pinTest(password)
     let regex = /^[0-9]{1,10}$/;
     return regex.test(password);
 }
+
+//Personal Loan Application form
+function fullnameTest(fullname)
+{
+    let regex = /^[a-zA-Z ]{2,30}$/;
+    return regex.test(fullname);  
+}
+function emailTest(email) 
+{
+    let regex = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+[.com]$/;
+    return regex.test(email);
+}
+function phonenoTest(phone) 
+{
+    let regex = /^[(0/91)]?[7-9][0-9]{9}$/;
+    return regex.test(phone);
+}
+function accountnotest(account) 
+{
+    let regex = /^[0-9]{16}$/;
+    return regex.test(account);
+}
+function ifscTest(ifsc)
+{
+    let regex = /^[a-zA-Z0-9]{1,12}$/;
+    return regex.test(ifsc);  
+}
+function branchTest(branch)
+{
+    let regex = /^[a-zA-Z ]{2,30}$/;
+    return regex.test(branch);  
+}
