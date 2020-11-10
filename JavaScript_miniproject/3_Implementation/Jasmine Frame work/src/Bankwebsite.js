@@ -70,3 +70,15 @@ function confirmpasswordTest(confirmpassword)
     let regex = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
     return regex.test(confirmpassword);
 }
+
+//Forgot Password
+function customeridTest(customer)
+{
+    let regex = /^[0-9]{1,10}$/;
+    return regex.test(customer);  
+}
+function emailTest(email) 
+{
+    let regex = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+[.com]$/;
+    return regex.test(email);
+}
