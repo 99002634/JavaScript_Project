@@ -229,3 +229,25 @@ function branchTest(branch)
     let regex = /^[a-zA-Z ]{2,30}$/;
     return regex.test(branch);  
 }
+
+//Statement on E-mail
+function customeridTest(customer)
+{
+    let regex = /^[0-9]{1,10}$/;
+    return regex.test(customer);  
+}
+function emailTest(email) 
+{
+    let regex = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+[.com]$/;
+    return regex.test(email);
+}
+function passwordTest(password) 
+{
+    let regex = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+    return regex.test(password);
+}
+function pinTest(password) 
+{
+    let regex = /^[0-9]{1,10}$/;
+    return regex.test(password);
+}
