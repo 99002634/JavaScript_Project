@@ -97,3 +97,26 @@ describe('Testing the Home Loan', ()=>{
         expect(res).toBeTruthy();
     })
 });
+
+describe('Testing the Apply for Loan on Credit Card', ()=>{
+    it("Check for Name", ()=>{
+        const res = nameTest("Harsha");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Phone No.", ()=>{
+        const res = phonenoTest("7996485901");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Credit Card No.", ()=>{
+        const res = cardtest("9874321685216431");
+        expect(res).toBeTruthy();
+    })
+    it("Check for PIN", ()=>{
+        const res = pinTest("123456");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Password", ()=>{
+        const res = passwordTest("harsha");
+        expect(res).toBeTruthy();
+    })
+});
