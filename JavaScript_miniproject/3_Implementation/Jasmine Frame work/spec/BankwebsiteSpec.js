@@ -196,3 +196,22 @@ describe('Testing the Personal Loan Application form', ()=>{
         expect(res).toBeTruthy();
     })
 });
+
+describe('Testing the Statement on E-mail', ()=>{
+    it("Check for Customer ID", ()=>{
+        const res = customeridTest("2634");
+        expect(res).toBeTruthy();
+    })
+    it("Check for E-mail Address", ()=>{
+        const res = emailTest("harshaca@gmail.com");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Password", ()=>{
+        const res = passwordTest("harsha");
+        expect(res).toBeTruthy();
+    })
+    it("Check for PIN", ()=>{
+        const res = pinTest("123456");
+        expect(res).toBeTruthy();
+    })
+});  
