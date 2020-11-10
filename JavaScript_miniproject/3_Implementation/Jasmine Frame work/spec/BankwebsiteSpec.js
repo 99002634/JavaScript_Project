@@ -120,3 +120,18 @@ describe('Testing the Apply for Loan on Credit Card', ()=>{
         expect(res).toBeTruthy();
     })
 });
+
+describe('Testing the Account Login', ()=>{
+    it("Check for Customer ID", ()=>{
+        const res = customeridTest("2634");
+        expect(res).toBeTruthy();
+    })
+    it("Check for PIN", ()=>{
+        const res = pinTest("123456");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Password", ()=>{
+        const res = passwordTest("harsha");
+        expect(res).toBeTruthy();
+    })
+});
