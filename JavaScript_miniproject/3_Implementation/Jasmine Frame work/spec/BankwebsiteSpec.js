@@ -169,3 +169,30 @@ describe('Testing the Net Banking', ()=>{
         expect(res).toBeTruthy();
     })
 });
+
+describe('Testing the Personal Loan Application form', ()=>{
+    it("Check for Full Name", ()=>{
+        const res = fullnameTest("Harsha");
+        expect(res).toBeTruthy();
+    })
+    it("Check for E-mail Address", ()=>{
+        const res = emailTest("harshaca@gmail.com");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Phone No.", ()=>{
+        const res = phonenoTest("7996485910");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Account No.", ()=>{
+        const res = accountnotest("9874321685211111");
+        expect(res).toBeTruthy();
+    })
+    it("Check for IFSC", ()=>{
+        const res = ifscTest("SHSBK000011");
+        expect(res).toBeTruthy();
+    })
+    it("Check for Branch", ()=>{
+        const res = branchTest("Kolar");
+        expect(res).toBeTruthy();
+    })
+});
