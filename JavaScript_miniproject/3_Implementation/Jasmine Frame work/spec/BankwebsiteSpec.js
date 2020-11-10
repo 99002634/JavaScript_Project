@@ -1,4 +1,4 @@
-describe('Testing the Business Loan Application', ()=>{
+describe('Testing the Business Loan Application', () =>{
     it("Check for Full Name", ()=>{
         const res = fullnameTest("Harsha");
         expect(res).toBeTruthy();
