@@ -59,3 +59,14 @@ describe('Testing the Create Account', ()=>{
         expect(res).toBeTruthy();
     })
 });
+
+describe('Testing the Forgot Password', ()=>{
+    it("Check for Customer ID", ()=>{
+        const res = customeridTest("2634");
+        expect(res).toBeTruthy();
+    })
+    it("Check for E-mail Address", ()=>{
+        const res = emailTest("harshaca@gmail.com");
+        expect(res).toBeTruthy();
+    })
+});
